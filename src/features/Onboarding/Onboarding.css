@@ -1,0 +1,75 @@
+.Onboarding {
+  animation: slide-from-bottom 0.6s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.Step {
+  padding: 30px;
+}
+.Step h1 {
+  font-size: 32px;
+}
+
+.Input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--gray);
+  font-size: 20px;
+  padding: 12px 20px;
+  border: 3px var(--gray) solid;
+  margin-top: 40px;
+}
+.Input::placeholder {
+  color: var(--gray-darker);
+}
+.Input:focus {
+  background-color: #fff;
+  border-color: var(--gray-darker);
+}
+.Input:focus::placeholder {
+  opacity: 0;
+}
+
+.Button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.Button:not(:disabled):active {
+  opacity: 0.7;
+}
+
+.Tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
+  border: 2px var(--gray) solid;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  margin: 7px;
+  color: var(--black70);
+  transition: all 0.2s ease;
+}
+.Tile h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.Tile p {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.Tile.focused {
+  border-color: #fff;
+  box-shadow: 0 2px 25px rgba(89, 90, 106, 0.25);
+  color: rgba(255, 255, 255, 0.7);
+}
+.Tile.focused h2 {
+  color: #fff !important;
+}
+.Tile.focused svg {
+  filter: brightness(1000) opacity(0.7);
+}
