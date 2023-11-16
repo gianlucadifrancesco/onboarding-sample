@@ -19,4 +19,4 @@ https://onboarding-sample.netlify.app/
 - `typescript`
 - `redux` for state management.
 - `redux-persist` to persist state into localStorage.
-- `react-router-dom` and `react-swipeable-routes` to handle navigation between screen.
+- `react-router-dom` and `react-swipeable-routes` to handle navigation between screens.
